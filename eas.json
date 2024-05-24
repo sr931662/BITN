@@ -1,25 +1,27 @@
 {
-  "build": {
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal"
+  "expo": {
+    "name": "client",
+    "slug": "client",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/image.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/image.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1A212E"
     },
-    "preview": {
-      "distribution": "internal",
-      "ios": {
-        "simulator": true
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1A212E"
       }
     },
-    "production": {
-      "ios": {
-        "buildType": "app-store"
-      },
-      "android": {
-        "buildType": "apk"
-      }
+    "web": {
+      "favicon": "./assets/favicon.png"
     }
-  },
-  "submit": {
-    "production": {}
   }
 }
