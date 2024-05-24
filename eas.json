@@ -1,26 +1,31 @@
 {
-    "build": {
-      "development": {
-        "developmentClient": true,
-        "distribution": "internal"
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
       },
-      "preview": {
-        "distribution": "internal",
-        "ios": {
-          "simulator": true
-        }
-      },
-      "production": {
-        "ios": {
-        "supportsTablet": true
-        },
-        "android": {
-          "buildType": "apk"
-        }
+      "android": {
+        "buildType": "apk"
       }
     },
-    "submit": {
-      "production": {}
+    "preview": {
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "ios": {
+        "simulator": false
+      },
+      "android": {
+        "buildType": "app-bundle"
+      }
     }
-  }
-  
+  },
+}
